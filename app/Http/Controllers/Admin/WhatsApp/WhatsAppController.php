@@ -17,7 +17,6 @@ use App\Services\WhatsAppService;
 class WhatsAppController extends Controller
 {
     protected WhatsAppService $whatsapp;
-
     public function __construct(WhatsAppService $whatsapp)
     {
         $this->whatsapp = $whatsapp;
