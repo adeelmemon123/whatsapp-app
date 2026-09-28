@@ -30,12 +30,15 @@ class WhatsAppController extends Controller
             'sessions' => $sessions,
         ]);
     }
+
     public function createSession(CreateWhatsAppRequest $request)
     {
         $request->handle($this->whatsapp);
 
         return redirect()->route('whatsapp.index')->with('success', 'Session created successfully.');
     }
+
+
 
     public function deleteSession(DeleteWhatsAppRequest $request,string $session) {
         $request->handle($this->whatsapp, $session);
