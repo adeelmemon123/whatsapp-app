@@ -30,7 +30,6 @@ class WhatsAppController extends Controller
             'sessions' => $sessions,
         ]);
     }
-
     public function createSession(CreateWhatsAppRequest $request)
     {
         $request->handle($this->whatsapp);
