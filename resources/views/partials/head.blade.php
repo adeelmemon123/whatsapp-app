@@ -16,7 +16,7 @@
     @if (isset($site_title))
         <title>{{ $site_title }} | {{ $currentPath }} @yield('title', '')</title>
     @else
-        <title>AnimeCovers | @yield('title', '')</title>
+        <title>WhatsApp | @yield('title', '')</title>
     @endif
 
     <link rel="icon" href="{{ asset('images/logo.webp') }}" type="image/x-icon">
